@@ -38,7 +38,12 @@ export default function recipes() {
         </nav>
 
         {/* list our recipes */}
-          {/* <RecipeCard /> */}
+        {/* <RecipeCard /> */}
+        <div className="w-full mt-10 lg:px-96 lg:mx-36 px-8">
+          <div className="bg-red-900 hover:bg-red-700 py-2 px-4 rounded-xl text-white">
+            <center>Load More</center>
+          </div>
+        </div>
       </div>
     </section>
   );
