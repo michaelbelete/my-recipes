@@ -29,7 +29,7 @@ export default function search() {
     getNextPageParam: (lastPage) => lastPage.page ?? undefined,
   });
 
-  const resultCount = data?.pages[0].posts.length
+  const resultCount = data?.pages[0].posts.length;
   const submitData = async (e) => {
     e.preventDefault();
     navigate("/" + searchQuery, { replace: true });
@@ -82,9 +82,19 @@ export default function search() {
             </div>
           </nav>
           {status === "loading" ? (
-            <p>Loading...</p>
+            <div className="w-full mt-10 lg:px-96 lg:mx-36 px-8">
+              <center>
+                <div className="text-xl font-bold px-5">Loading recipes...</div>
+              </center>
+            </div>
           ) : status === "error" ? (
-            <span>Error: {error.message}</span>
+            <div className="w-full mt-10 lg:px-96 lg:mx-36 px-8">
+              <center>
+                <div className="text-lg px-5">
+                  Error refresh your page: {error.message}
+                </div>
+              </center>
+            </div>
           ) : (
             <>
               {data.pages.map((page) => (
@@ -94,24 +104,24 @@ export default function search() {
                   ))}
                 </>
               ))}
+              <div className="w-full mt-10 lg:px-96 lg:mx-36 px-8">
+                <button
+                  ref={ref}
+                  onClick={() => fetchNextPage()}
+                  disabled={!hasNextPage || isFetchingNextPage}
+                  className="bg-red-900 hover:bg-red-700 py-2 px-4 rounded-xl text-white"
+                >
+                  <center>
+                    {isFetchingNextPage
+                      ? "Loading more..."
+                      : hasNextPage
+                      ? "Load Newer"
+                      : "Nothing more to load"}
+                  </center>
+                </button>
+              </div>
             </>
           )}
-          <div className="w-full mt-10 lg:px-96 lg:mx-36 px-8">
-            <button
-              ref={ref}
-              onClick={() => fetchNextPage()}
-              disabled={!hasNextPage || isFetchingNextPage}
-              className="bg-red-900 hover:bg-red-700 py-2 px-4 rounded-xl text-white"
-            >
-              <center>
-                {isFetchingNextPage
-                  ? "Loading more..."
-                  : hasNextPage
-                  ? "Load Newer"
-                  : "Nothing more to load"}
-              </center>
-            </button>
-          </div>
         </div>
       </section>
       <Footers />

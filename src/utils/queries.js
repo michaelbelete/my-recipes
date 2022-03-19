@@ -15,8 +15,6 @@ export async function fetchRecipes({ pageParam = null }) {
 
 //search recipes 
 export async function searchRecipes({queryKey, pageParam = null}) {
-  // eslint-disable-next-line no-unused-vars
-
   const q = queryKey[1];
   let res;
 
