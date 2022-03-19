@@ -16,7 +16,7 @@ export default function footers() {
                         <h3 className="font-bold text-gray-900">Social</h3>
                         <ul className="list-reset items-center pt-3">
                             <li>
-                                <a className="inline-block no-underline hover:text-black hover:underline py-1" href="#">Add social links</a>
+                                <a className="inline-block no-underline hover:text-black hover:underline py-1" href="/">Add social links</a>
                             </li>
                         </ul>
                     </div>

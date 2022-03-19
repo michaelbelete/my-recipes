@@ -1,18 +1,15 @@
-import './App.css';
-import { QueryClient, QueryClientProvider } from "react-query";
+import "./App.css";
 import Recipes from "./Recipes.js";
 import Headers from "./components/Header.js";
 import Footers from "./components/Footer.js";
 
-const queryClient = new QueryClient();
-
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Headers />
+    <>
+      <Headers header={true}/>
       <Recipes />
       <Footers />
-    </QueryClientProvider>
+    </>
   );
 }
 

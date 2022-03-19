@@ -3,7 +3,7 @@ export default function RecipeCard(props) {
     <div className="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
       <a href={props.post.post_url}>
         <img
-          className="hover:grow hover:shadow-lg h-72"
+          className="hover:grow hover:shadow-lg"
           src={props.post.post_img_url_src}
           alt="product"
         />

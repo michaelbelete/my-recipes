@@ -1,6 +1,6 @@
 import { BiFoodMenu, BiUser } from "react-icons/bi";
 import { AiOutlineChrome } from "react-icons/ai";
-export default function headers() {
+export default function headers(props) {
   return (
     <div>
       <nav id="header" className="w-full z-30 top-0 py-1">
@@ -75,30 +75,32 @@ export default function headers() {
           </div>
         </div>
       </nav>
-      <section className="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right carousel">
-        <div className="container mx-auto">
-          <div className="flex flex-col w-full lg:w-1/2 justify-center items-start  px-6 tracking-wide mt-10">
-            <h1 className="text-3xl font-bold text-white drop-shadow-lg my-2">
-              Start cooking with Repibox
-            </h1>
-            <div className="flex flex-row gap-4">
-              <a
-                href="/#recipes"
-                className="my-4 text-white bg-red-900 px-5 py-3 rounded-xl hover:bg-red-800"
-              >
-                Browse Recipes
-              </a>
+      {props.header && (
+        <section className="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right carousel">
+          <div className="container mx-auto">
+            <div className="flex flex-col w-full lg:w-1/2 justify-center items-start  px-6 tracking-wide mt-10">
+              <h1 className="text-3xl font-bold text-white drop-shadow-lg my-2">
+                Start cooking with Repibox
+              </h1>
+              <div className="flex flex-row gap-4">
+                <a
+                  href="/#recipes"
+                  className="my-4 text-white font-bold bg-red-900 px-5 py-3 rounded-xl hover:bg-red-800"
+                >
+                  Browse Recipes
+                </a>
 
-              <a
-                href="/#recipes"
-                className="my-4 text-white bg-transparent border-2 border-red-900 hover:border-red-800 hover:text-gray-300 px-5 py-3 rounded-xl"
-              >
-                Add Extension
-              </a>
+                <a
+                  href="https://chrome.google.com/webstore/detail/repibox-recipe-viewer-ext/nbgpmjdmplldckdiolbacdflmebgnoij"
+                  className="my-4 text-white font-bold bg-transparent border-2 border-white  hover:border-red-800 hover:text-gray-300 px-5 py-3 rounded-xl"
+                >
+                  Add Extension
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </div>
   );
 }
