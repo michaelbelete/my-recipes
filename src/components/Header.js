@@ -36,7 +36,7 @@ export default function headers(props) {
                 <li>
                   <a
                     className="inline-block no-underline hover:text-black hover:underline py-2 px-4"
-                    href="https://www.linkedin.com/in/betselot-getnet-2423561aa/"
+                    href="https://www.github.com/michaelbelete"
                   >
                     About
                   </a>
@@ -62,16 +62,6 @@ export default function headers(props) {
             <a className="inline-block no-underline hover:text-black" href="/">
               <BiUser size={30} />
             </a>
-
-            <a
-              className="pl-3 inline-block no-underline hover:text-black"
-              href="https://chrome.google.com/webstore/detail/My Recipes-recipe-viewer-ext/nbgpmjdmplldckdiolbacdflmebgnoij    "
-            >
-              <div className="flex flex-row gap-1 px-2 bg-red-900 py-1 rounded-lg text-white">
-                <AiOutlineChrome size={25} />
-                Add extension
-              </div>
-            </a>
           </div>
         </div>
       </nav>
@@ -85,16 +75,9 @@ export default function headers(props) {
               <div className="flex flex-row gap-4">
                 <a
                   href="/#recipes"
-                  className="my-4 text-white font-bold bg-red-900 px-5 py-3 rounded-xl hover:bg-red-800"
+                  className="my-4 text-white font-bold bg-blue-900 px-5 py-3 rounded-xl hover:bg-blue-800"
                 >
                   Browse Recipes
-                </a>
-
-                <a
-                  href="https://chrome.google.com/webstore/detail/My Recipes-recipe-viewer-ext/nbgpmjdmplldckdiolbacdflmebgnoij"
-                  className="my-4 text-white font-bold bg-transparent border-2 border-white  hover:border-red-800 hover:text-gray-300 px-5 py-3 rounded-xl"
-                >
-                  Add Extension
                 </a>
               </div>
             </div>

@@ -96,7 +96,7 @@ export default function recipes() {
                 ref={ref}
                 onClick={() => fetchNextPage()}
                 disabled={!hasNextPage || isFetchingNextPage}
-                className="bg-red-900 hover:bg-red-700 py-2 px-4 rounded-xl text-white"
+                className="bg-blue-900 hover:bg-blue-700 py-2 px-4 rounded-xl text-white"
               >
                 <center>
                   {isFetchingNextPage

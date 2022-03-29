@@ -15,7 +15,7 @@ export default function RecipeCard(props) {
         <p className="text-sm mt-4 text-gray-600">
           {props.post.post_description}
         </p>
-        <p className="w-full mt-3 py-2 text-red-900 font-bold rounded-xl border-red-900 px-4 border-2 hover:border-red-700 hover:text-red-700">
+        <p className="w-full mt-3 py-2 text-blue-900 font-bold rounded-xl border-blue-900 px-4 border-2 hover:border-blue-700 hover:text-blue-700">
           <center>
             <a href={props.post.post_url}>View Recipe</a>
           </center>
