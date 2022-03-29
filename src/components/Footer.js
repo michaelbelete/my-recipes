@@ -8,7 +8,7 @@ export default function footers() {
                     <div className="px-3 md:px-0">
                         <h3 className="font-bold text-gray-900">About</h3>
                         <p className="py-4">
-                        The Repibox recipe extension for chrome helps you instantly jump to the recipe. Repibox will detect if a page contains a recipe and will automatically display the ingredients and instructions at the top of the page so that you can cook distraction free.
+                        The My Recipes recipe extension for chrome helps you instantly jump to the recipe. My Recipes will detect if a page contains a recipe and will automatically display the ingredients and instructions at the top of the page so that you can cook distraction free.
                         </p>
                     </div>
                 </div>
@@ -17,7 +17,7 @@ export default function footers() {
                         <h3 className="font-bold text-gray-900">Social</h3>
                         <ul className="list-reset items-center pt-3">
                             <li>
-                                <a className="inline-block no-underline hover:text-black hover:underline py-1" href="https://twitter.com/repibox?_ga=2.55956717.797439766.1647617721-564109100.1647442327"><AiFillTwitterCircle size={40} className="text-blue-500"/></a>
+                                <a className="inline-block no-underline hover:text-black hover:underline py-1" href="https://twitter.com/My Recipes?_ga=2.55956717.797439766.1647617721-564109100.1647442327"><AiFillTwitterCircle size={40} className="text-blue-500"/></a>
                             </li>
                         </ul>
                     </div>

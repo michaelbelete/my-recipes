@@ -5,7 +5,7 @@ export default function headers(props) {
     <div>
       <nav id="header" className="w-full z-30 top-0 py-1">
         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
-          <label for="menu-toggle" className="cursor-pointer md:hidden block">
+          <label htmlFor="menu-toggle" className="cursor-pointer md:hidden block">
             <svg
               className="fill-current text-gray-900"
               xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export default function headers(props) {
               href="/"
             >
               <BiFoodMenu className="mr-1" />
-              Repibox
+              My Recipes
             </a>
           </div>
 
@@ -65,7 +65,7 @@ export default function headers(props) {
 
             <a
               className="pl-3 inline-block no-underline hover:text-black"
-              href="https://chrome.google.com/webstore/detail/repibox-recipe-viewer-ext/nbgpmjdmplldckdiolbacdflmebgnoij    "
+              href="https://chrome.google.com/webstore/detail/My Recipes-recipe-viewer-ext/nbgpmjdmplldckdiolbacdflmebgnoij    "
             >
               <div className="flex flex-row gap-1 px-2 bg-red-900 py-1 rounded-lg text-white">
                 <AiOutlineChrome size={25} />
@@ -80,7 +80,7 @@ export default function headers(props) {
           <div className="container mx-auto">
             <div className="flex flex-col w-full lg:w-1/2 justify-center items-start  px-6 tracking-wide mt-10">
               <h1 className="text-3xl font-bold text-white drop-shadow-lg my-2">
-                Start cooking with Repibox
+                Start cooking with My Recipes
               </h1>
               <div className="flex flex-row gap-4">
                 <a
@@ -91,7 +91,7 @@ export default function headers(props) {
                 </a>
 
                 <a
-                  href="https://chrome.google.com/webstore/detail/repibox-recipe-viewer-ext/nbgpmjdmplldckdiolbacdflmebgnoij"
+                  href="https://chrome.google.com/webstore/detail/My Recipes-recipe-viewer-ext/nbgpmjdmplldckdiolbacdflmebgnoij"
                   className="my-4 text-white font-bold bg-transparent border-2 border-white  hover:border-red-800 hover:text-gray-300 px-5 py-3 rounded-xl"
                 >
                   Add Extension

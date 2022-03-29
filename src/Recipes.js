@@ -86,8 +86,8 @@ export default function recipes() {
           <>
             {data.pages.map((page) => (
               <>
-                {page.posts.map((recipe) => (
-                  <RecipeCard post={recipe} />
+                {page.posts.map((recipe, index) => (
+                  <RecipeCard post={recipe} key={index} />
                 ))}
               </>
             ))}
